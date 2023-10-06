@@ -7,4 +7,15 @@
         echo "Luty: 29";
     else 
         echo "Luty: 28";
+
+    echo "<br>";
+    switch ($leapYear)
+    {
+        case true:
+            echo "Luty: 29";
+            break;
+        case false:
+            echo "Luty: 28";
+            break;
+    }
 ?>
