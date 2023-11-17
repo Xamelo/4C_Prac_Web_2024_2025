@@ -1,0 +1,3 @@
+instrukcja switch jest bardziej czytelna i prosciej jest wprowadzac zmiany
+jest bardziej wydajna pod powtarzania instrukcji if
+jest skroca wersja instrukcji if
