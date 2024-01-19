@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>form</title>
+        <style>
+            body {
+                background-color: bisque;
+                text-align: center;
+            }
+
+            main {
+                margin: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Wypełnij formularz: </h1>
+        </header>
+        <main>
+            <form action="php_skript.php" method="post">
+                Imię:<br/>
+                <input type="text" name="name" value="" size="25"/><br/>
+                Nazwisko:<br/>
+                <input type="text" name="surn" value="" size="25"/><br/>
+                Płeć:<br/>
+                <input type="radio" name="sex" value="mężczyzna"/>Mężczyzna
+                <input type="radio" name="sex" value="kobieta"/>Kobieta<br/>
+                Wiek:<br/>
+                <input type="number" name="age" value=""/><br/>
+                Klasa:<br/>
+                <select name="class">
+                    <option value="Klasa 1">Klasa 1</option>
+                    <option value="Klasa 2">Klasa 2</option>
+                    <option value="Klasa 3">Klasa 3</option>
+                    <option value="Klasa 4">Klasa 4</option>
+                </select><br/>
+                <input type="submit" value="Wyślij" name="wyślij"> &nbsp; &nbsp;
+                <input type="reset" value="Wyczyść" name="zeruj">
+            </form>
+        </main>
+        <footer>
+            Autor: Kamil Borek
+        </footer>
+    </body>
+</html>
