@@ -1,0 +1,5 @@
+ADRES: http://forum.php.pl/php_txt_Ksiega_gosci_gotowy_dzialajacy_skrypt_t90559.html
+Używana metoda: post
+Rozszerzenie pliku przechowywujące dane: php
+Typy pól w formularzu: input
+Liczba pól formularza: 2

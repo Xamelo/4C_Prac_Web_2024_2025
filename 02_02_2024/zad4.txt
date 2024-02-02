@@ -1,0 +1,6 @@
+zad2:
+http://localhost/02_02_2024/zad2.php?name=fds&surname=fs
+zad3:
+http://localhost/02_02_2024/zad3.php
+
+różnica jest taka, że metoda get pokazuje przesyłane parametry w URL, a post je ukrywa

@@ -1,0 +1,7 @@
+GET
+wady: widać dane w pasku adresu, można je też wtedy zmieniać, ma ograniczenia co do przesyłania parametrów
+zalety: może się przydać w momencie, gdy nie ma konieczności ukrywania przekazywanych danych
+
+POST
+wady: brak czytelności w URL, zlożoność debugowania, możliwość utraty danych
+zalety: ukrywa przekazywanie danych, przydaje się do rozbudowanych formularzy
