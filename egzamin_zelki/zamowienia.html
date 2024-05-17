@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Fabryka cukierków</title>
+        <link rel="stylesheet" href="styl10.css"/>
+    </head>
+    <body>
+        <header>
+            <section id="leftHeader">
+                <a href="zamowienia.html" id="oderA">Zamów cukierki</a>
+            </section>
+            <section id="rightHeader">
+                <a href="index.html"><img src="logotyp.png" alt="Nasze logo"/></a>
+            </section>
+        </header>
+        <section id="banner">
+            <h1>Strefa zamówień</h1>
+        </section>
+        <main>
+            <section id="leftMain">
+                Numer kształtu:<br/>
+                <input type="number" id="numberOfShape"/><br/>
+                Skomponuj swój kolor, podaj RGB:<br/>
+                R: <input type="number" id="inputR"/> G: <input type="number" id="inputG"/> B: <input type="number" id="inputB"/><br/>
+                <button onclick="order()">Zamówienie</button>
+                <p id="paragraphText">Twoje zamówienie</p>
+                <button id="buttonColor">Kolor</button>
+            </section>
+            <section id="rightMain">
+                <h2>Nasza oferta</h2>
+                <table>
+                    <tr>
+                        <td>Kształty</td> <td rowspan="2">Możesz zamówić</br> dowolny kolor cukierka</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>cytryna</li>
+                                <li>liść</li>
+                                <li>banan</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            Autor strony: <b>Kamil Borek</b>
+        </footer>
+    </body>
+    <script>
+        function order()
+        {
+            let numberOfShape = document.getElementById('numberOfShape').value;
+            switch(numberOfShape) {
+                case '1':
+                    document.getElementById('paragraphText').innerHTML = "Twoje zamówienie to cukierek cytryna";
+                    break;
+                case '2':
+                    document.getElementById('paragraphText').innerHTML = "Twoje zamówienie to cukierek liść";
+                    break;
+                case '3':
+                document.getElementById('paragraphText').innerHTML = "Twoje zamówienie to cukierek banan";
+                    break;
+                default:
+                    document.getElementById('paragraphText').innerHTML = "Twoje zamówienie to cukierek inny";
+            }
+
+            let R = document.getElementById('inputR').value;
+            let G = document.getElementById('inputG').value;
+            let B = document.getElementById('inputB').value;
+            let button = document.getElementById('buttonColor');
+            button.style.backgroundColor = 'rgb(' + R + ',' + G + ',' + B + ')';
+        }
+    </script>
+</html>
