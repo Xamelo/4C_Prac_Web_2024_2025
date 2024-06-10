@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css"/>
+</head>
+<body>
+    <header>
+        <h2>Galeria ciekawych miejsc</h2>
+    </header>
+    <main>
+        <img src="lanzarotte.jpg" alt="galeria" id="mainPhoto"/>
+    </main>
+    <section class="lewy">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" onclick="changeMainPhoto('lanzarotte')"/>
+        <img src="pekin.jpg" alt="pekin" onclick="changeMainPhoto('pekin')"/>
+        <img src="serengeti.jpg" alt="serengeti" onclick="changeMainPhoto('serengeti')"/>
+        <img src="wenecja.jpg" alt="wenecja" onclick="changeMainPhoto('wenecja')"/>
+        <img src="tajlandia.jpg" alt="tajlandia" onclick="changeMainPhoto('tajlandia')"/>
+    </section>
+    <section class="prawy">
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td> <td>Azja</td> <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>2</td> <td>1</td>
+            </tr>
+        </table>
+        <p>Polub nas<img src="icon-off.png" id="icon" onclick="changeIcon()"></p>
+        <a href="https://pixabay.com">Odkryj więcej zdjęć</a>
+    </section>
+    <footer>
+        Autor: 0000000000
+    </footer>
+</body>
+<script>
+    let iconAnable = false;
+    function changeMainPhoto(photo)
+    {
+        switch (photo) {
+            case "lanzarotte":
+                document.getElementById('mainPhoto').src = "lanzarotte.jpg";
+                break;
+            case "pekin":
+                document.getElementById('mainPhoto').src = "pekin.jpg";
+                break;
+            case "serengeti":
+                document.getElementById('mainPhoto').src = "serengeti.jpg";
+                break;
+            case "wenecja":
+                document.getElementById('mainPhoto').src = "wenecja.jpg";
+                break;
+            case "tajlandia":
+                document.getElementById('mainPhoto').src = "tajlandia.jpg";
+                break;
+            default:
+                break;
+        }
+    }
+
+    function changeIcon()
+    {
+        if (iconAnable)
+        {
+            document.getElementById('icon').src = "icon-off.png";
+            iconAnable = false;
+        }
+        else
+        {
+            document.getElementById('icon').src = "icon-on.png";
+            iconAnable = true;
+        }
+    }
+</script>
+</html>

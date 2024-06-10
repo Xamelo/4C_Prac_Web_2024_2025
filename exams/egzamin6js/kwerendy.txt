@@ -1,0 +1,7 @@
+SELECT kierunek, czas FROM przyloty WHERE przyloty.status_lotu = "";
+
+SELECT kierunek, dzien FROM odloty JOIN samoloty ON odloty.samoloty_id = samoloty.id WHERE typ = "Boening 787";
+
+SELECT nr_rejsu, kierunek FROM przyloty WHERE przyloty.nr_rejsu LIKE "%LX%"
+
+UPDATE samoloty SET samoloty.linie = "SWISS2" WHERE samoloty.linie = "SWISS";
