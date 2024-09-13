@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Formularz</title>
+</head>
+<body id="body">
+    <form>
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name"/><br/>
+        <label for="surname">Nazwisko:</label>
+        <input type="text" name="surname" id="surname"/><br/>
+        <label for="age">Wiek:</label>
+        <input type="number" name="age" id="age"/><br/>
+        <input type="button" value="Wyślij" onclick="send()"/>
+    </form>
+    <button onclick="changeBackground()">Zmień tło</button><br/>
+    <span id="textArea"></span>
+</body>
+</html>
+<script>
+    let color = true;
+
+    function send()
+    {
+        let name = document.getElementById('name').value;
+        let surname = document.getElementById('surname').value;
+        let age = document.getElementById('age').value;
+        show(name, surname, age);
+    }
+    
+    function show(name, surname, age)
+    {
+        document.getElementById('textArea').innerHTML = name + " " + surname + " " + age;
+    }
+
+    function changeBackground()
+    {
+        let body = document.getElementById('body');
+
+        if (color) {
+            body.style.backgroundColor = 'black';
+            color = false;
+        } else {
+            body.style.backgroundColor = 'azure';
+            color = true;;
+        }
+    }
+</script>
