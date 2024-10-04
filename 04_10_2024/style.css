@@ -1,0 +1,39 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+form {
+    margin-left: 40%;
+}
+
+h1 {
+    color: rgb(55, 167, 157);
+}
+
+button {
+    background-color: rgb(55, 167, 157);
+    color: white;
+    padding-left: 117px;
+    padding-right: 117px;
+    font-size: 40px;
+    border-radius: 2%;
+    margin-left: 40%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(91, 177, 170);
+}
+
+form {
+    width: 400px;
+}
+
+fieldset {
+    border-radius: 2%;
+}
+
+#result {
+    margin-left: 40%;
+}
