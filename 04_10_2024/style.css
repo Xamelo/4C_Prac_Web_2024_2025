@@ -37,3 +37,7 @@ fieldset {
 #result {
     margin-left: 40%;
 }
+
+#number {
+    text-align: end;
+}
