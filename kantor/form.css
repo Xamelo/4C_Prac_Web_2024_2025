@@ -1,0 +1,58 @@
+.form {
+    max-width: 450px;
+    margin: auto;
+}
+
+.form__fieldset {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form__legend {
+    text-align: center;
+    color: teal;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form__container {
+    width: 100%;
+}
+
+.form__label {
+    font-size: 18px;
+}
+
+.form__input {
+    text-align: right;
+    width: 200px;
+    padding: 3px;
+}
+
+.form__list {
+    list-style: none;
+}
+
+.form__listItem {
+    padding: 5px;
+}
+
+.form__listItem:hover {
+    color: teal;
+}
+
+.form__button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: teal;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.form__button:hover {
+    background-color: turquoise;
+}

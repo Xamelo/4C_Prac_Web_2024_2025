@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="section.css"/>
+    <link rel="stylesheet" href="form.css"/>
+    <script src="script.js" defer></script>
+    <title>Kantor</title>
+</head>
+<body>
+    <section class="section">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    KANTOR WALUT
+                </legend>
+                <div class="form__container">
+                    <label class="form__label">
+                        Kwota*: <input class="form__input js-inputAmount"
+                        type="number" placeholder="100"/>
+                        <select class="js-selectCurrency" name="selectCurrency">
+                            <option value="pln">PLN</option>
+                            <option value="usd">USD</option>
+                            <option value="gbp">GBP</option>
+                            <option value="eur">EUR</option>
+                            <option value="chf">CHF</option>
+                        </select>
+                    </label>
+                    <p>* - pole wymagane</p>
+                </div>
+                <div class="form__container">
+                    <p>Wybierz walutę docelową:</p>
+                    <ul class="form__list">
+                        <li class="form__listItem">
+                            <label for="form__label">
+                                <input class="js-pln" type="radio" name="radio" value="PLN">PLN
+                            </label>
+                        </li>
+                        <li class="form__listItem">
+                            <label for="form__label">
+                                <input class="js-usd" type="radio" name="radio" value="USD" checked>USD
+                            </label>
+                        </li>
+                        <li class="form__listItem">
+                            <label for="form__label">
+                                <input class="js-gbp" type="radio" name="radio" value="GBP">GBP
+                            </label>
+                        </li>
+                        <li class="form__listItem">
+                            <label for="form__label">
+                                <input class="js-eur" type="radio" name="radio" value="EUR">EUR
+                            </label>
+                        </li>
+                        <li class="form__listItem">
+                            <label for="form__label">
+                                <input class="js-chf" type="radio" name="radio" value="CHF">CHF
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <div class="form__container">
+                <button class="form__button js-form_button" type="submit">przelicz</button>
+            </div>
+        </form>
+        <p class="section__paragraph">Otrzymasz: <span class="section__value js-section__value"></span><span class="section__currency js-section__currency"></span></p>
+    </section>
+</body>
+</html>
