@@ -8,28 +8,29 @@
 </head>
 <body>
     <form>
-        <fieldset><legend><h1>KANTOR WALUT</h1></legend>
-        <label for="amount">Kwota*:</label>
-        <input type="number" id="number" name="amount" placeholder="100"/>
-        <select name="currency" id="currency">
-            <option>PLN</option>
-            <option>USD</option>
-            <option>GBP</option>
-            <option>EUR</option>
-            <option>CHF</option>
-        </select><br/>
-        <label>* - pole wymagane</label><br/>
-        <label for="currencyRadio">Wybierz walutę docelową:</label><br/>
-        <input type="radio" name="currencyRadio" value="PLN" id="PLN">
-        <label for="PLN">PLN</label><br/>
-        <input type="radio" name="currencyRadio" value="USD" id="USD">
-        <label for="USD">USD</label><br/>
-        <input type="radio" name="currencyRadio" value="GBP" id="GBP">
-        <label for="GBP">GBP</label><br/>
-        <input type="radio" name="currencyRadio" value="EUR" id="EUR">
-        <label for="EUR">EUR</label><br/>
-        <input type="radio" name="currencyRadio" value="CHF" id="CHF">
-        <label for="CHF">CHF</label>
+        <fieldset>
+            <legend><h1>KANTOR WALUT</h1></legend>
+            <label for="amount">Kwota*:</label>
+            <input type="number" id="number" name="amount" placeholder="100"/>
+            <select name="currency" id="currency">
+                <option>PLN</option>
+                <option>USD</option>
+                <option>GBP</option>
+                <option>EUR</option>
+                <option>CHF</option>
+            </select><br/>
+            <label>* - pole wymagane</label><br/>
+            <label for="currencyRadio">Wybierz walutę docelową:</label><br/>
+            <input type="radio" name="currencyRadio" value="PLN" id="PLN">
+            <label for="PLN">PLN</label><br/>
+            <input type="radio" name="currencyRadio" value="USD" id="USD">
+            <label for="USD">USD</label><br/>
+            <input type="radio" name="currencyRadio" value="GBP" id="GBP">
+            <label for="GBP">GBP</label><br/>
+            <input type="radio" name="currencyRadio" value="EUR" id="EUR">
+            <label for="EUR">EUR</label><br/>
+            <input type="radio" name="currencyRadio" value="CHF" id="CHF">
+            <label for="CHF">CHF</label>
         </fieldset>
     </form>
     <button onclick="recalculate()">Przelicz</button><br/>
