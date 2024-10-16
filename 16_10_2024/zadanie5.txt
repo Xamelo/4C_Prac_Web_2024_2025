@@ -1,0 +1,9 @@
+Tytuł:  Sprawdzenie, czy liczba jest pierwsza
+Rozpocznij
+wczytaj (n)
+i <-- 2
+dla i - 2,3,..n-1  jeżeli n%i==0 wypisz("nie jest")
+w przeciwnym razie
+wypisz ("jest")
+zakończ
+

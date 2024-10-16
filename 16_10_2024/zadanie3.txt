@@ -1,0 +1,12 @@
+Tytuł: Sprawdzenie, czy liczba jest parzysta
+Rozpocznij
+wczytaj (num)
+Jeżeli (num%2==0)
+{
+	wypisz "(nieparzysta")
+}
+w przeciwnym razie
+{
+	wypisz ("parzysta")
+}
+Zakończ

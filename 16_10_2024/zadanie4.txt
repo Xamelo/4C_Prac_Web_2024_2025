@@ -1,0 +1,10 @@
+Tytył: obliczanie silni
+funkcja silnia(n)
+jeżeli n==0 zwróć 1
+w przeciwnym razie zwróć silnia(n-1)*n
+
+rozpocznij
+wczytaj
+(n)
+s <-- silnia(n)
+zakończ

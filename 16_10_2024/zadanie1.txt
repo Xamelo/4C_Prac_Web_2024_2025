@@ -1,0 +1,7 @@
+Tytuł:Obliczanie sumy liczb od 1 do N, gdzie 0 przerywa wprowadzania liczb
+Rozpocznij
+result <-- 0
+wczytaj (x)
+wykonuj result <-- reuslt+n
+dopóki (x==0)
+Zakończ

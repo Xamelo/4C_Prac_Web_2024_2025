@@ -1,0 +1,27 @@
+Tytuł: Znajdowanie największej z trzech liczb
+Rozpocznij
+wczytaj (num1, num2, num3)
+Jeżeli (num1>num2)
+{
+	Jeżeli(num1>3)
+	{
+		max <-- num 1
+	}
+	W przecziwnym razie
+	{
+		max <-- num3
+	}
+}
+w przeciwnym razie
+{
+	Jeżeli (num2>num3)
+	{
+		max<--num2
+	}
+	w przeciwnym razie
+	{
+		max<--num3
+	}
+}
+Zakończ
+
