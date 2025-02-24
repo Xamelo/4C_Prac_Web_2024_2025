@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React na stronie WWW</title>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+       const attributes = {
+            className: "button",
+            disabled: true,
+        };
+
+        const message = "<strong>sialala";
+
+        const element1 = <div className="klasa1">Treść1</div>;
+        ReactDOM.render(element1, document.getElementById('root'));
+
+        const element2 = <div className="klasa2">Treść2</div>;
+        ReactDOM.render(element2, document.getElementById('root'));
+
+        const Element = () => {
+            return (
+                /*<button {...attributes}>
+                    Wyłączony przycisk
+                </button>*/
+                <div>{message}</div>
+            );
+        };
+       // ReactDOM.createRoot(document.getElementById('root')).render(<Element />);
+    </script>
+</body>
+</html>

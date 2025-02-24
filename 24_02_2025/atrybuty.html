@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React na stronie WWW</title>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Welcome(props) {
+            return <h1>Witaj, {props.name}!</h1>;
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Welcome name="Anna" />
+                    <Welcome name="Tomasz" />
+                    <Welcome name="Karolina" />
+                </div>
+            );
+        }
+        
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+       /*const attributes = {
+            className: "button",
+            disabled: true,
+        };
+
+        const element = (
+            <button {...attributes}>
+                Wyłączony przycisk
+            </button>
+        );*/
+    </script>
+</body>
+</html>
