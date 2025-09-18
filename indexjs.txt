@@ -1,0 +1,49 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
+import Products from './pages/Products'
+import ProductDetails from './pages/ProductDetails'
+import { createBrowserRouter,
+         RouterProvider,
+ } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <layout />, // zaweiera <Outlet>
+    errorElement: <ErrorPage />, //obsulga bledow loaderow/akcji
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'products', element: <Products />, loader: productsLoader },
+      { path: 'products/:id', element: <ProductDetails />, loader: productLoader },
+      { path: '*', element: <h1>400</h1> },
+    ],
+    },
+])
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+  <RouterProvider router={router}/>
+   <Routes>
+      <Route path="/" element={<App />}> {/** layout + <Outlet/> */}
+        <Route index element={<Home />} />
+        <Route path="products" element={<Products />} />
+        <Route path="products/:id" element={<ProductDetails />} />
+        <Route path='*' element={<h1>404</h1>} />
+      </Route>
+   </Routes>
+  </BrowserRouter>
+);
+
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
